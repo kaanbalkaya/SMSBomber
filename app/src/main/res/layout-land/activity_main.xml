@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.balkaya.kaan.smsbomber.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:id="@+id/constraintLayout">
+
+
+    <EditText
+        android:id="@+id/messageView"
+        android:layout_width="557dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:hint="Message"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.514" />
+
+    <EditText
+        android:id="@+id/telefonView"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="119dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:onClick="sendFunction"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/telefonView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        android:layout_marginLeft="7dp" />
+
+    <EditText
+        android:id="@+id/sayiView"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+        android:hint="Count"
+        android:inputType="numberDecimal"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/telefonView"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="340dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="146dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
